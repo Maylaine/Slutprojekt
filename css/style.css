@@ -24,14 +24,14 @@ body{
 
 footer{
 	position: fixed;
-	 left: 200px;
-  bottom: 20px;
-   width: calc(100% - 220px);
-   background-color: rgba(255,255,255,0.90);
-   color: black;
-  text-align: center;
-  font-size: 13px;
-  padding-top: 10px;
+	left: 200px;
+	bottom: 20px;
+	width: calc(100% - 220px);
+	background-color: rgba(255,255,255,0.90);
+	color: black;
+	text-align: center;
+	font-size: 13px;
+	padding-top: 10px;
 }
 
 .footerbild{
@@ -40,4 +40,31 @@ footer{
 
 a{
 	color: black;
+}
+.förlänghamburg { /*utdragen*/
+	background-color: transparent;
+	position: fixed;
+	top: 0px;
+	width: 0px;
+	left: 0px;
+	height: 0px;
+}
+
+@media (max-width: 767px) { /*hamburgare*/
+	.navbar {
+		width: 140px;
+	}
+
+	.nav-fill .nav-item {
+		text-align: left;
+	}
+
+	.förlänghamburg { 
+		background-color: rgba(255,255,255,0.90);
+		width: calc(100% - 360px);
+		height: 56px;
+		left:340px;
+		top: 20px;
+
+	}
 }
