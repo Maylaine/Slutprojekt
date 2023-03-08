@@ -3,8 +3,6 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	margin-left: 200px;
-	font-size: 13px; 
 }
 
 .logga{
@@ -67,4 +65,22 @@ a{
 		top: 20px;
 
 	}
+}
+
+.rowmargin{
+	margin-left: 200px;
+	margin-top: 100px;
+	margin-bottom: 70px;
+	width: calc(100% - 220px);
+	font-size: 15px;
+}
+
+
+h1 {
+	font-size: 20px;
+}
+
+.cardbakgrund {
+    background-color: rgba(255,255,255,0.90);
+
 }
