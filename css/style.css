@@ -102,3 +102,7 @@ h1 {
 * {
 	font-family: 'Montserrat';
 }
+
+.center{
+	text-align: center;
+}
