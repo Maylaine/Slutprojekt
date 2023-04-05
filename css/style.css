@@ -30,6 +30,7 @@ footer{
 	text-align: center;
 	font-size: 13px;
 	padding-top: 10px;
+	font-weight: bold;
 }
 
 .footerbild{
@@ -38,6 +39,7 @@ footer{
 
 a{
 	color: black;
+	font-weight: bold;
 }
 .förlänghamburg { /*utdragen*/
 	background-color: transparent;
@@ -75,12 +77,16 @@ a{
 	font-size: 15px;
 }
 
-
 h1 {
 	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
 }
 
 .cardbakgrund {
-    background-color: rgba(255,255,255,0.90);
+	background-color: rgba(255,255,255,0.90);
+}
 
+* {
+	font-family: 'Montserrat';
 }
