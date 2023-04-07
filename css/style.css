@@ -106,3 +106,12 @@ h1 {
 .center{
 	text-align: center;
 }
+
+.padding{
+	padding-top: 20px;
+}
+
+
+.minbredd{
+	  min-width: 300px;
+}
