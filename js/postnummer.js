@@ -1,7 +1,7 @@
 //Källa: https://download.geonames.org/export/zip/SE.zip
 function postNummer(postnummer)
 {
-postnummer = postnummer.replaceAll(' ', ''); //https://stackoverflow.com/questions/6623231/remove-all-white-spaces-from-text
+postnummer = postnummer.replaceAll(' ', ''); //Källa: https://stackoverflow.com/questions/6623231/remove-all-white-spaces-from-text
 if(postnummer=='18600'){return'Vallentuna';}
 if(postnummer=='18601'){return'Vallentuna';}
 if(postnummer=='18603'){return'Brottby';}
