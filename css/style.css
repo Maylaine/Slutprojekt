@@ -116,3 +116,7 @@ h1 {
 .minbredd{
 	  min-width: 300px;
 }
+
+.obligatorisk{
+	color: red;
+}

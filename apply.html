@@ -1,49 +1,48 @@
-  <!doctype html>
-    <html lang="en">
-    <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-      <title>The Indie Quest</title>
-      <link rel="icon" type="image/x-icon" href="img/logga.ico">
-      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    </head>
-    <body>
-
-      <div class="row rowmargin ">
-       <div class="col-lg-12 kolumnmargin">
+    <title>The Indie Quest</title>
+    <link rel="icon" type="image/x-icon" href="img/logga.ico">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="row rowmargin ">
+      <div class="col-lg-12 kolumnmargin">
         <div class="card mb-3 cardbakgrund h-100">
           <div class="card-body">
             <form onsubmit="if (document.getElementById('Foreign').checked == true || validatePNum(document.getElementById('Personnummer').value)) {alert('Tack för din ansökan! / Thanks for your application!');return true;} else{alert('Personnumret är felaktigt.');return false;}">
               <div class="row">
                 <div class="col-lg-1 minbredd">
-                  <input type="radio" name="citizen" id="Swedish" value="Swedish" checked=true onclick="document.getElementById('divland').setAttribute('hidden', 'hidden');
+                  <input type="radio" name="citizen" id="Swedish" value="Swedish" checked="checked" onclick="document.getElementById('divland').setAttribute('hidden', 'hidden');
                   document.getElementById('divpersonnummer').removeAttribute('hidden');
                   document.getElementById('Personnummer').setAttribute('required','required');">
                   <label for="Swedish">Swedish citizen</label>
                 </div>
                 <div class="col-lg-1 minbredd">
-                 <input type="radio" name="citizen" id="Foreign" value="Foreign" onclick="document.getElementById('divpersonnummer').setAttribute('hidden', 'hidden');
-                 document.getElementById('divland').removeAttribute('hidden');
-                 document.getElementById('Personnummer').removeAttribute('required');">
-                 <label for="Foreign">Foreign citizen</label>
+                  <input type="radio" name="citizen" id="Foreign" value="Foreign" onclick="document.getElementById('divpersonnummer').setAttribute('hidden', 'hidden');
+                  document.getElementById('divland').removeAttribute('hidden');
+                  document.getElementById('Personnummer').removeAttribute('required');">
+                  <label for="Foreign">Foreign citizen</label>
                 </div>
               </div>
               <div class="row padding">
                 <div class="col-lg-12">
                   <div id="divpersonnummer">
-                    <label for="Personnummer">Personnummer (ÅÅÅÅMMDD-XXXX)<font color="RED">*</font></label>
+                    <label for="Personnummer">Personnummer (ÅÅÅÅMMDD-XXXX)<span class="obligatorisk">*</span></label>
                     <br>
                     <input id="Personnummer" name="Personnummer" type="text" required minlength="13" maxlength="13">
                   </div>
                   <div id="divland" hidden="hidden">
-                    <label for="land" id="land">Select a country:<font color="RED">*</font></label><br>
-                    <select  id="selectedNationalityValue" name="land">
+                    Select a country:<span class="obligatorisk">*</span><br>
+                    <select  id="selectedNationalityValue" name="hland">
                       <!-- https://copylists.com/dropdown-list/?listID=10 -->
                       <option>Afghanistan</option>
                       <option>Albania</option>
@@ -244,12 +243,12 @@
               </div>
               <div class="row padding">
                 <div class="col-lg-1 minbredd">
-                  <label for="Förnamn">Förnamn / First name<font color="RED">*</font></label>
+                  <label for="Förnamn">Förnamn / First name<span class="obligatorisk">*</span></label>
                   <br>
                   <input id="Förnamn" name="Förnamn" type="text" required>
                 </div>
                 <div class="col-lg-1 minbredd">
-                  <label for="Efternamn">Efternamn / Last name<font color="RED">*</font></label>
+                  <label for="Efternamn">Efternamn / Last name<span class="obligatorisk">*</span></label>
                   <br>
                   <input id="Efternamn" name="Efternamn" type="text" required>
                 </div>
@@ -263,7 +262,7 @@
               </div>
               <div class="row padding">
                 <div class="col-lg-1 minbredd">
-                  <label for="Postnummer">Postnummer / Zip code<font color="RED">*</font></label>
+                  <label for="Postnummer">Postnummer / Zip code<span class="obligatorisk">*</span></label>
                   <br>
                   <input id="Postnummer" name="Postnummer" type="text" required minlength="5" maxlength="6" onkeyup="if(postNummer(getElementById('Postnummer').value) != '')
                   {
@@ -271,7 +270,7 @@
                   }">
                 </div>
                 <div class="col-lg-1 minbredd">
-                  <label for="Ort">Ort / City<font color="RED">*</font></label>
+                  <label for="Ort">Ort / City<span class="obligatorisk">*</span></label>
                   <br>
                   <input id="Ort" name="Ort" type="text" required>
                 </div>
@@ -290,7 +289,7 @@
               </div>
               <div class="row padding">
                 <div class="col-lg-12">
-                  <label for="kontakt">Hur vill du bli kontaktad? / How do you want to be contacted?<font color="RED">*</font></label><br>
+                  <label for="kontakt">Hur vill du bli kontaktad? / How do you want to be contacted?<span class="obligatorisk">*</span></label><br>
                   <select name="kontakt" id="kontakt">
                     <option value="Telefon">Telefon / Phone</option>
                     <option value="E-post">E-post / E-mail</option>
@@ -302,65 +301,59 @@
                 <div class="col-lg-12">
                   <input type="submit" value="Submit" class="btn btn-primary">
                 </div>
+              </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 kolumnpadding"></div>
+          <div class="col-lg-3 kolumnpadding">
+            <p><img src="img/TelefonTransparant.png" class="footerbild" alt="Telefon ikon"> +46 701-72 99 88</p>
+          </div>
+          <div class="col-lg-3 kolumnpadding">
+            <p><img src="img/MailTransparant.png" class="footerbild" alt="Mail ikon"> <a href="mailto:contact@theindiequest.com">contact@theindiequest.com</a></p>
+          </div>
+          <div class="col-lg-3 kolumnpadding"></div>
+        </div>
+      </div>
+    </footer>
+
+    <nav class="navbar navbar-expand-md navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav-fill w-100">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Welcome</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="curriculum.html">Curriculum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="findus.html">Find us</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="apply.html">Apply</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="förlänghamburg"></div>
+    <a href="index.html"><img src="img/logga.png" class="logga" alt="Logga"></a>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="js/postnummer.js"></script>
+    <script src="js/personnummer.js"></script>
   </body>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 kolumnpadding">
-        </div>
-        <div class="col-lg-3 kolumnpadding">
-          <p><img src="img/TelefonTransparant.png" class="footerbild"> +46 701-72 99 88</p>
-        </div>
-        <div class="col-lg-3 kolumnpadding">
-          <p><img src="img/MailTransparant.png" class="footerbild"> <a href="mailto:contact@theindiequest.com">contact@theindiequest.com</a></p>
-        </div>
-        <div class="col-lg-3 kolumnpadding">
-        </div>
-      </footer>
-
-
-      <nav class="navbar navbar-expand-md navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav nav-fill w-100">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Welcome</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="curriculum.html">Curriculum</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="findus.html">Find us</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="apply.html">Apply</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="förlänghamburg"/>
-      <a href="index.html"><img src="img/logga.png" class="logga"></a>
-
-
-
-
-      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-      <script src="js/postnummer.js"></script>
-      <script src="js/personnummer.js"></script>
-
-
-      </html>
+</html>
