@@ -20,16 +20,18 @@
        <div class="col-lg-12 kolumnmargin">
         <div class="card mb-3 cardbakgrund h-100">
           <div class="card-body">
-            <form>
+            <form onsubmit="if (document.getElementById('Foreign').checked == true || validatePNum(document.getElementById('Personnummer').value)) {alert('Tack för din ansökan! / Thanks for your application!');return true;} else{alert('Personnumret är felaktigt.');return false;}">
               <div class="row">
                 <div class="col-lg-1 minbredd">
-                  <input type="radio" name="citizen" id="Swedish" value="Swedish" checked="checked" onclick="document.getElementById('divland').setAttribute('hidden', 'hidden');
-                  document.getElementById('divpersonnummer').removeAttribute('hidden');">
+                  <input type="radio" name="citizen" id="Swedish" value="Swedish" checked=true onclick="document.getElementById('divland').setAttribute('hidden', 'hidden');
+                  document.getElementById('divpersonnummer').removeAttribute('hidden');
+                  document.getElementById('Personnummer').setAttribute('required','required');">
                   <label for="Swedish">Swedish citizen</label>
                 </div>
                 <div class="col-lg-1 minbredd">
                  <input type="radio" name="citizen" id="Foreign" value="Foreign" onclick="document.getElementById('divpersonnummer').setAttribute('hidden', 'hidden');
-                 document.getElementById('divland').removeAttribute('hidden');">
+                 document.getElementById('divland').removeAttribute('hidden');
+                 document.getElementById('Personnummer').removeAttribute('required');">
                  <label for="Foreign">Foreign citizen</label>
                 </div>
               </div>
@@ -245,12 +247,12 @@
                 <div class="col-lg-1 minbredd">
                   <label for="Förnamn">Förnamn / First name<font color="RED">*</font></label>
                   <br>
-                  <input id="Förnamn" name="Förnamn" type="text">
+                  <input id="Förnamn" name="Förnamn" type="text" required>
                 </div>
                 <div class="col-lg-1 minbredd">
                   <label for="Efternamn">Efternamn / Last name<font color="RED">*</font></label>
                   <br>
-                  <input id="Efternamn" name="Efternamn" type="text">
+                  <input id="Efternamn" name="Efternamn" type="text" required>
                 </div>
               </div>
               <div class="row padding">
@@ -272,12 +274,12 @@
                 <div class="col-lg-1 minbredd">
                   <label for="Ort">Ort / City<font color="RED">*</font></label>
                   <br>
-                  <input id="Ort" name="Ort" type="text">
+                  <input id="Ort" name="Ort" type="text" required>
                 </div>
               </div>
               <div class="row padding">
                 <div class="col-lg-1 minbredd">
-                  <label for="Telefonnummer">Telefonnummer / Phone number</label>
+                  <label for="Telefonnummer">Telefon / Phone</label>
                   <br>
                   <input id="Telefonnummer" name="Telefonnummer" type="text">
                 </div>
@@ -299,7 +301,7 @@
               </div>
               <div class="row padding">
                 <div class="col-lg-12">
-                  <button type="button" class="btn btn-primary">Send</button>
+                  <input type="submit" value="Submit" class="btn btn-primary">
                 </div>
             </form>
           </div>
@@ -359,6 +361,7 @@
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
       <script src="js/postnummer.js"></script>
+      <script src="js/personnummer.js"></script>
 
 
       </html>
