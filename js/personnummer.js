@@ -1,7 +1,7 @@
-//Källa: http://plea.se/me/validatePnum.html
+//Använt kod från: http://plea.se/me/validatePnum.html
 function validatePNum(sPNum)
 {
-  sPNum = sPNum.replaceAll('-', '');  //Mitt eget tillägg till koden
+  sPNum = sPNum.replaceAll('-', '');  //Mitt eget tillägg till koden, då man ska kunna skriva personnummer med och utan bindestreck
   var numbers = sPNum.match(/^(\d)(\d)(\d)(\d)(\d)(\d)(\d)(\d)(\d)(\d)(\d)(\d)$/);
   var checkSum = 0;
 

@@ -10,24 +10,27 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>The Indie Quest</title>
+    <!--Loggan i fliken-->
     <link rel="icon" type="image/x-icon" href="img/logga.ico">
+    <!--Typsnitt på sidan-->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   </head>
+
   <body>
-    <div class="row rowmargin ">
-      <div class="col-lg-6 kolumnmargin">
-        <div class="card mb-3 cardbakgrund h-100">
+    <div class="row firstrow "> <!--Rad med två cards-->
+      <div class="col-lg-6 kolumnmargin"> <!--Vänstra kolumnen-->
+        <div class="card mb-3 cardbakgrund h-100"> <!--Card med maxhöjd, så att cardens höjd blir lika-->
           <div class="card-body">
             <h1>Learn indie game development</h1>
             <p>The Indie Quest is a course in programming, art, and production, specifically designed for creating indie games. Instead of studying individual subjects in isolation, you acquire the skills directly by using them on game projects.</p>
             <p>You will first become an apprentice, completing carefully designed game coding missions that will build your programming knowledge step-by-step. You will then extend these foundations by learning advanced concepts while creating your own games. Applying project management strategies will help you prototype your ideas and polish the end result to share your games with the world.</p>
             <p>On the art side of things you will choose any visual style that you want for your games. A study plan personalized for your goals will guide you through the art fundamentals and technical aspects required to bring your vision to life. Be it pixel art, 3D, traditional drawing, or digital painting, we have you covered.</p>
-            <p><a href="curriculum.html">Learn more about the curriculum</a></p>
+            <p><a href="curriculum.html">Learn more about the curriculum</a></p> <!--Intern länk-->
           </div>
         </div>
       </div>
-      <div class="col-lg-6 kolumnmargin">
-        <div class="card mb-3 cardbakgrund h-100">
+      <div class="col-lg-6 kolumnmargin"> <!--Höger kolumnen-->
+        <div class="card mb-3 cardbakgrund h-100"> <!--Card med maxhöjd, så att cardens höjd blir lika-->
           <div class="card-body">
             <h1>The way we teach</h1>
             <p>There are no exams in our school. You will not have to write project reports or memorize theory. All that matters is what you are able to create and your completed games will demonstrate that.</p>
@@ -37,44 +40,44 @@
         </div>
       </div>
     </div>
-    <div class="row enkolumnmargin">
-      <div class="col-lg-12">
+    <div class="row nextrow"> <!--Rad med ett card-->
+      <div class="col-lg-12"> <!--Stor kolumn-->
         <div class="card mb-3 cardbakgrund">
           <div class="card-body">
             <h1>More than a school</h1>
             <p>Another unique advantage of The Indie Quest, besides the specialized curriculum, is learning and working within a community of many professional indie game developers. Spelkollektivet, where the school takes place, is the largest co-living and co-working space for game developers from all over the world. You will be part of a friendly, supportive community that shares the love for gaming and creating games, including all the social and professional development activities that happen in the house.</p>
-            <p><a target="_blank" href="https://www.spelkollektivet.com">Learn more about Spelkollektivet</a></p>
+            <p><a target="_blank" href="https://www.spelkollektivet.com">Learn more about Spelkollektivet</a></p> <!--Extern länk som öppnas i ny flik-->
           </div>
         </div>
       </div>
     </div>
-    <footer>
+    
+    <footer> <!--Footer med 4 kolumner, kod placerad längst ner för att sidan ska scrollas bakom-->
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 kolumnpadding">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-3">
+            <p><img src="img/TelefonTransparant.png" class="footerbild" alt="Telefon ikon"> +46 701-72 99 88</p> <!--Telefonnummer och ikon-->
           </div>
-          <div class="col-lg-3 kolumnpadding">
-            <p><img src="img/TelefonTransparant.png" class="footerbild" alt="Telefon ikon"> +46 701-72 99 88</p>
+          <div class="col-lg-3">
+            <p><img src="img/MailTransparant.png" class="footerbild" alt="Mail ikon"> <a href="mailto:contact@theindiequest.com">contact@theindiequest.com</a></p> <!--Mail och ikon-->
           </div>
-          <div class="col-lg-3 kolumnpadding">
-            <p><img src="img/MailTransparant.png" class="footerbild" alt="Mail ikon"> <a href="mailto:contact@theindiequest.com">contact@theindiequest.com</a></p>
-          </div>
-          <div class="col-lg-3 kolumnpadding">
-          </div>
+          <div class="col-lg-3"></div>
         </div>
       </div>
-    </footer>
+    </footer> <!--Footer slutar-->
 
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light"> <!--Navigeringsmenyn, kod placerad längst ner för att sidan ska scrollas bakom-->
+      <!--Hamburgaremenyn-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span><!--Hamburgeikonen-->
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav nav-fill w-100">
+        <ul class="navbar-nav nav-fill w-100"> <!--Lista med 5 undersidor som har full bredd-->
           <li class="nav-item">
             <a class="nav-link" href="index.html">Welcome</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item active"> <!--Aktiv sida är About-->
             <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
@@ -88,12 +91,12 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> <!--Navigeringsmeny tar slut-->
 
-    <div class="förlänghamburg"></div>
-    <a href="index.html"><img src="img/logga.png" class="logga" alt="Logga"></a>
+    <div class="förlänghamburg"></div> <!--Vit yta som syns vid hamburgemeny-->
+    <a href="index.html"><img src="img/logga.png" class="logga" alt="Logga"></a> <!--Logga i headern-->
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+     <!-- Inlänkad bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
   </body>

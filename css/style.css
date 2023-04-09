@@ -1,24 +1,24 @@
 body{
-	background-image: url("../img/bakgrund.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+	background-image: url("../img/bakgrund.png"); /*Bakgrundbild*/
+	background-repeat: no-repeat; /*Ingen upprepning av bilden*/
+	background-attachment: fixed; /*Scrollas inte*/
+	background-size: cover; /*Täcker hela sidan*/
 }
 
 footer{
-	position: fixed;
-	left: 200px;
+	position: fixed; /*Scrollas inte*/
+	left: 200px; /*Vänsterjustering för att förflytta footern 200px från vänsterkanten för att ge plats åt loggan i headern*/
 	bottom: 20px;
-	width: calc(100% - 220px);
-	background-color: rgba(255,255,255,0.90);
+	width: calc(100% - 220px); /*Full bredd på footer förutom vänsterjusteringen på 200 px och en marginal till höger på 20px*/
+	background-color: rgba(255,255,255,0.90); /*Bakgrundsfärgen är vit och delvis genomskinlig*/
 	color: black;
 	text-align: center;
 	font-size: 13px;
 	padding-top: 10px;
-	font-weight: bold;
+	font-weight: bold; /*Fetstil*/
 }
 
-a{
+a{ /*Länkarnas utseende*/
 	color: black;
 	font-weight: bold;
 }
@@ -29,71 +29,70 @@ h1 {
 	font-weight: bold;
 }
 
-* {
+* { /*Typsnitt*/
 	font-family: 'Montserrat';
 }
 
 .logga{
-	position: fixed;
-	left: 0px;
-	width: 200px;
+	position: fixed; /*Scrollas inte*/
+	left: 0px; /*Placering högst upp i vänstra hörnet*/ 
 	top: 0px;
+	width: 200px; /*Storlek*/
 }
 
-.navbar{
-	position: fixed;
-	left: 200px;
+.navbar{ /*Navigeringsmenyn*/
+	position: fixed; /*Scrollas inte*/
+	left: 200px; /*Vänsterjustering för att förflytta menyn 200px från vänsterkanten för att ge plats åt loggan i headern*/
 	top: 20px;
-	width: calc(100% - 220px);
-	background-color: rgba(255,255,255,0.90);
+	width: calc(100% - 220px); /*Full bredd på menyn förutom vänsterjusteringen på 200 px och en marginal till höger på 20px*/
+	background-color: rgba(255,255,255,0.90); /*Bakgrundsfärgen är vit och delvis genomskinlig*/
 	font-size: 20px;
 }
 
-.footerbild{
-	width: 15px;
+.footerbild{ /*Ikonerna som är placerade i footern*/
+	width: 15px; /*Storlek*/
 }
 
-.förlänghamburg { /*utdragen*/
-	background-color: transparent;
-	position: fixed;
-	top: 0px;
-	width: 0px;
-	left: 0px;
+.förlänghamburg { /*Vita rutan till höger om hamburgemenysymbolen, när hamburgemenyn inte är framme. Gömmer den i princip.*/
+	background-color: transparent; /*´Helt genomskinlig*/
+	position: fixed; /*Scrollas inte*/
+	top: 0px; /*Placering högst upp i vänstra hörnet*/
+	left: 0px; 
+	width: 0px; /*Ingen storlek*/
 	height: 0px;
 }
 
-@media (max-width: 767px) { /*hamburgare*/
-	.navbar {
+@media (max-width: 767px) { /*Hamburgemenyn*/
+	.navbar { /*Bredd på utklickade hamburgemenyn och dess naturliga storlek*/
 		width: 140px;
 	}
 
-	.nav-fill .nav-item {
+	.nav-fill .nav-item { /*Vänsterjusterar menyvalen i hamburgemenyn*/
 		text-align: left;
 	}
 
-	.förlänghamburg { 
-		background-color: rgba(255,255,255,0.90);
-		width: calc(100% - 360px);
+	.förlänghamburg { /*Vita rutan till höger om hamburgemenysymbolen, när hamburgemenyn är framme.*/
+		background-color: rgba(255,255,255,0.90); /*Bakgrundsfärgen är vit och delvis genomskinlig*/
+		width: calc(100% - 360px); /*Full bredd på hamburgemenyn förutom vänsterjusteringen på 200 px för loggan och 140px för utklickade hamburgemenyn och en marginal till höger på 20px*/
 		height: 56px;
-		left:340px;
+		left:340px; /*Vanliga vänsterjusteringen på 200px plus 140px för utklickad hamburgemeny*/
 		top: 20px;
-
 	}
 }
 
-.rowmargin{
-	margin-left: 200px;
-	margin-top: 100px;
+.firstrow{ /*CSS till första raden på sidorna*/
+	margin-left: 200px; /*Vänsterjusteringen för loggan*/
+	margin-top: 100px; /*Avstånd från raden till sidans topp, för att ge plats åt marginaler och navigeringsmeny*/
 	margin-bottom: 20px;
-	width: calc(100% - 220px);
+	width: calc(100% - 220px); /*Full bredd på raden förutom vänsterjusteringen på 200 px och en marginal till höger på 20px*/
 	font-size: 15px;
 }
 
-.enkolumnmargin{
-	width: calc(100% - 220px);
+.nextrow{ /*CSS till resterande rader på sidorna*/
+	width: calc(100% - 220px); /*Full bredd på raden förutom vänsterjusteringen på 200 px och en marginal till höger på 20px*/
 	font-size: 15px;
 	margin-top: 0px;
-	margin-left: 200px;
+	margin-left: 200px; /*Vänsterjusteringen för loggan*/
 }
 
 .kolumnmargin{
@@ -101,7 +100,7 @@ h1 {
 }
 
 .cardbakgrund {
-	background-color: rgba(255,255,255,0.90);
+	background-color: rgba(255,255,255,0.90);  /*Bakgrundsfärgen är vit och delvis genomskinlig*/
 }
 
 .center{
